@@ -13,13 +13,23 @@
 
 .head 
 {
-    font-family: Montserrat, sans-serif;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateZ(150%);
+    text-align: center;
     color: white;
-    font-size: 32px;
-    margin-left:35;
-    margin-top: 40;
-    height:60px;
-    position: fixed;
+}
+.head h1{
+    font-family: Arial Black, sans-serif;
+    font-size: 110;
+}
+.head p{    
+    font-family: Century Gothic, sans-serif;
+    font-size: 30;
+    margin-top: -35;
+    
 }
 .navbar 
 {
@@ -28,6 +38,10 @@
     margin:0;
     height:60px;
     list-style-type: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
 }
 .navbar li
 {   
